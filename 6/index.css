@@ -1,0 +1,219 @@
+@import "base.css";
+
+header {
+  min-width: 100%;
+  background-color: #303336;
+  overflow: hidden;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  height: 50px;
+}
+
+.title h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 50px;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+}
+
+nav {
+  text-align: right;
+  height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 0;
+}
+
+nav ul li {
+  display: inline;
+  line-height: 50px;
+  cursor: default;
+}
+
+nav ul li a {
+  font-size: 17px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: .2px;
+  text-transform: none;
+  cursor: pointer;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav ul li + li {
+  margin-left: 25px;
+}
+
+.mobile-nav {
+  overflow: hidden;
+}
+
+.mobile-nav p i {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.banner {
+  height: 540px;
+  background: #fff url("macos-mojave-3840x2160-night-dunes-wwdc-2018-4k-18883.jpg") center center / cover no-repeat;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.banner h2 {
+  font-size: 46px;
+  font-weight: 300;
+  color: #fff;
+}
+
+.banner h3 {
+  margin-top: 4px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+
+hr {
+  width: 80px;
+  margin: 0 auto;
+  margin-top: 25px;
+  border-top: 3px solid #303336;
+}
+section {
+  padding: 80px 0;
+  background-color: #f7f8f9;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  width: 100%;
+  padding: 15px;
+}
+
+.col-content {
+  position: relative;
+  width: 100%;
+  padding: 24px 28px 29px 28px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 20px 48px 0 rgba(59, 69, 152, .15);
+  display: flex;
+  flex-direction: column;
+}
+
+.content h3 {
+  font-size: 22px;
+  color: #303336;
+  font-weight: 700;
+}
+
+.content p {
+  margin-top: 9px;
+  font-size: 18px;
+  color: #303336;
+  font-weight: 500;
+}
+
+.button a {
+  display: inline-block;
+  width: 120px;
+  height: 46px;
+  margin-top: 34px;
+  line-height: 47px;
+  background-color: #303336;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .1px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 2.5 ease-in-out;
+}
+ @media screen and (min-width: 320px) {
+   nav { display: none; }
+   .mobile-nav { display: block; }
+ }
+
+@media screen and (min-width: 580px) {
+  nav { display: none; }
+  .mobile-nav { display: block; }
+
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container, .row-container {
+    max-width: 800px;
+  }
+
+  nav { display: block; }
+  .mobile-nav { display: none; }
+
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container, .row-container {
+    max-width: 1140px;
+  }
+
+  nav { display: block; }
+  .mobile-nav { display: none; }
+
+  .col-lg-3 {
+    flex: 0 0 25%;
+    width: 25%;
+  }
+}
+
+.topnav .search-container button:hover {
+    background: #ccc;
+    border-radius: 12px;
+}
+  
+  @media screen and (max-width: 600px) {
+    .topnav .search-container {
+      float: none;
+    }
+}
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid #ccc;  
+    }
