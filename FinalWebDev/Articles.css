@@ -1,0 +1,43 @@
+@import "base.css";
+
+  body {
+    background: #f1f1f1;
+  }
+
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+  }
+  .leftcolumn {   
+    float: left;
+    width: 100%;
+  }
+
+  .fakeimg {
+
+    background: #aaa url("Top-Uses-Of-HTML.jpeg");
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  .fakeimg2 {
+
+    background: #aaa url("Top-Uses-Of-HTML.jpeg");
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
