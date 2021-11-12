@@ -17,15 +17,18 @@
 
   .fakeimg {
 
-    background: #aaa url("Top-Uses-Of-HTML.jpeg");
+    background: #aaa url("#");
     width: 100%;
-    height: 100%;
+    height: 200px;
     padding: 20px;
+    background-repeat: no-repeat;
+
   }
   .fakeimg2 {
 
-    background: #aaa url("Top-Uses-Of-HTML.jpeg");
+    background: #aaa url("#");
     width: 100%;
+    height: 200px;
     padding: 20px;
   }
   

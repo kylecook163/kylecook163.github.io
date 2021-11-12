@@ -161,6 +161,7 @@ footer {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
+  position: absolute;
 }
 
 .social .nav {
@@ -209,6 +210,7 @@ a, i {
 .social .nav ul li a i.fa-instagram,
 .social .nav ul li a i.fa-youtube,
 .social .nav ul li a.github,
+.social .nav ul li a.facebook,
 .social .nav ul li a.snapchat {
   line-height: 38px;
 }
@@ -232,6 +234,10 @@ a, i {
   border: 1px solid black;
   background-color: black;
 }
+.social .nav ul li a.facebook:hover {
+  border: 1px solid #3b5998;
+  background-color: #3b5998;
+}
 
 .social .nav ul li a.snapchat:hover{
   border: 1px solid #FFFC00;
@@ -242,6 +248,7 @@ a, i {
 .social .nav ul li a.instagram:hover i,
 .social .nav ul li a.youtube:hover i,
 .social .nav ul li a.github:hover i,
+.social .nav ul li a.facbook:hover i,
 .social .nav ul li a.snapchat:hover i {
   color: #fff;
 }
