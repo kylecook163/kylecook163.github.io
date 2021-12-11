@@ -1,0 +1,25 @@
+@import "base.css";
+
+
+.banner {
+    height: 1900px;
+    background: #fff url("Thumbsup.jpg") center center / cover no-repeat;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+
+.banner h2 {
+    font-size: 46px;
+    font-weight: 300;
+    color: #fff;
+
+
+  }
+  
+  .banner h3 {
+    margin-top: 4px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+  }
